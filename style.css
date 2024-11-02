@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fae2eb;
+  max-width: 100vw; 
+  margin: auto;
+}
+
+header {
+  background-color: #8a4065;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+header .logo h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 3em;
+}
+
+header .logo p {
+  font-size: 1em;
+  font-style: italic;
+}
+
+#navbar ul {
+  list-style: none; 
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  margin: 0; 
+  padding: 12px 0; 
+  background-color: #d66b7d;
+  height: 25px;
+}
+
+#navbar ul li {
+  flex-grow: 1; 
+  text-align: center;
+}
+
+#navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  padding: 12px 0;
+  height: 100%; 
+}
+
+#navbar ul li a:hover {
+  background-color: #4a4a68;
+  color: #fff;
+  height: 100%;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  padding: 40px 20px;
+  text-align: left;
+  max-width: 900px;
+  margin: auto;
+}
+
+.intro img {
+  width: 920px;
+  height: 610px;
+  border-radius: 3%;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.intro h2 {
+  font-size: 1.8em;
+  color: #3b3a3e;
+}
+
+.intro p {
+  max-width: 1100px; 
+  line-height: 1.6;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 19px;
+}
+#start{
+  font-size: 27px;
+  font-weight:450;
+}
+
+#conclusion{
+  font-size: 24px;
+  font-weight: bold;
+  font-family:'Courier New', Courier, monospace;
+}
+
+#verse{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #103047;
+  padding: 0;
+  width: 100%;
+}
+
+.gallery-item {
+  width: calc(100% / 7);  
+  margin: 0;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 200px;
+  height: 300px;
+  display: block;
+  border-radius: 0;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.5); 
+  z-index: 1;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.1em;
+  line-height: 2.3;
+  margin-top: 140px;
+  margin-bottom: 40px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+#msg{
+  font-size: 1.7em;
+}
+
+@media (max-width: 700px) {
+  header .logo h1 {
+    font-size: 2em;
+  }
+
+  .intro {
+    flex-direction: column; 
+    text-align: center;
+    padding: 20px;
+  }
+
+  .intro img {
+    margin: 0 0 20px 0;
+    width: 95%; 
+    height: 500px; 
+  }
+
+  .gallery-item {
+    display: none; 
+  }
+
+  .gallery-item:nth-child(-n+3) {
+    display: block; 
+    width: calc(100% / 3); 
+}
+}
+
